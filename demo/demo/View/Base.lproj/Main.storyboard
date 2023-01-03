@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Carousel View-->
+        <!--Main View-->
         <scene sceneID="9mF-Ya-Oc2">
             <objects>
-                <viewController id="R2a-wz-5Gp" customClass="CarouselView" customModule="demo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="R2a-wz-5Gp" customClass="MainView" customModule="demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J0e-r8-5mk">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

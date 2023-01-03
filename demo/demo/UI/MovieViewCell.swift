@@ -11,23 +11,20 @@ import UIKit
 import SDWebImage
 
 class MovieViewCell: UICollectionViewCell {
-
+    static var identifier = "MovieViewCell"
     @IBOutlet weak var contentImage: UIView!
     @IBOutlet weak var imgMovie: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
     }
 
     func setValue(_ value:Product){
         let imageUrl = value.imageUrl ?? ""
         let url = URL(string: imageUrl)
-        
-        //self.photoLoader.startAnimating()
+
         let placeHolder = UIImage(named: "nofound")
-        imgMovie.sd_setImage(with: url, placeholderImage: placeHolder,  options: []) { image, error, cacheType, url in
-            //self.photoLoader.stopAnimating()
-        }
+        imgMovie.sd_setImage(with: url, placeholderImage: placeHolder,  options: [])
     }
 }
